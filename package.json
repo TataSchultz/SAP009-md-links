@@ -1,5 +1,5 @@
 {
-  "name": "md-links",
+  "name": "md-links-tataschultz",
   "version": "0.1.0",
   "engines": {
     "node": ">=16.x"
@@ -8,5 +8,33 @@
     "createdAt": "2023-03-30T13:20:37.337Z",
     "version": "5.6.0",
     "commit": "ffa75c8b2bede153844195479abeff01f3e34227"
+  },
+  "description": "Projeto realizado para ler e analisar arquivos no formato Markdown",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TataSchultz/SAP009-md-links.git"
+  },
+  "keywords": [
+    "Markdown",
+    "Node.js"
+  ],
+  "author": "Tarcila Schultz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TataSchultz/SAP009-md-links/issues"
+  },
+  "homepage": "https://github.com/TataSchultz/SAP009-md-links#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.1"
   }
 }
