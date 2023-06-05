@@ -18,3 +18,7 @@ redes e etc.
   * [Array.prototype.map() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
   * [Array.prototype.filter() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
   * [Array.prototype.reduce() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+
+[Testando](https://nodis.org/api/process.html)
+[Teste de retorno 400](https://httpstat.us/400).
+[Teste de retorno 404](https://httpstat.us/404).
