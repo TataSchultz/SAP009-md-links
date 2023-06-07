@@ -4,7 +4,7 @@
 
 * [1. Prefácio](#1-prefácio)
 * [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
+* [3. Funcionalidades](#3-funcionalidades)
 * [4. Considerações gerais](#4-considerações-gerais)
 * [5. Critérios de aceitação mínimos do projeto](#5-criterios-de-aceitação-mínimos-do-projeto)
 * [6. Entregáveis](#6-entregáveis)
@@ -27,253 +27,42 @@ Os arquivos `Markdown` normalmente contém _links_ que podem estar
 quebrados, ou que já não são válidos, prejudicando muito o valor da
 informação que está ali.
 
-Uma comunidade open source nos propôs criar uma ferramenta, usando
-[Node.js](https://nodejs.org/), que leia e analise arquivos no formato
-`Markdown`, para verificar os arquivos que contenham links e mostrar algumas
-estatísticas.
-
-![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
-
 ## 2. Resumo do projeto
 
-Neste projeto, será criado uma ferramenta de linha de comando (CLI) assim como
-a sua própria biblioteca (library) em Javascript.
+O projeto é uma ferramenta de linha de comando (CLI) e uma biblioteca em JavaScript para analisar arquivos Markdown e verificar os links contidos neles, fornecendo informaçoes sobre os links encontrados.
 
-Desta vez, vamos ficar um pouco longe do navegador para construir um programa
-executado com Node.js. Iremos aprender sobre processos
-(`process.env`, `process.argv`, ...),como interagir com sistemas de arquivos,
-como fazer consultas de rede, etc.
+A ferramenta foi desenvolvida usando Node.js, um ambiente de execução para JavaScript que permite executar código JavaScript no sistema operacional. Isso nos permite interagir com sistemas de arquivos, fazer consultas de rede e realizar várias outras operações.
 
-[Node.js](https://nodejs.org/pt-br/) é um ambiente de execução para JavaScript
-construído com o [motor de JavaScript V8 do
-Chrome](https://developers.google.com/v8/). Ele vai nos permitir executar o
-JavaScript no nosso sistema operacional, seja no seu computador ou em um
-servidor, o que nos abre portas para poder interagir com sistemas, arquivos,
-redes e etc.
+## 3. Funcionalidades
 
-Desenvolver sua própria biblioteca é uma experiência fundamental para qualquer
-desenvolvedora, pois te obriga a pensar na interface (API) dos seus _módulos_ e
-como ela será usada por outras desenvolvedoras. Você deve levar em conta as
-peculiaridades da linguagem, convenções e boas práticas.
+* Leitura e análise de arquivos Markdown
+* Verificação de links quebrados ou inválidos
+* Opção para realizar verificação assíncrona ou síncrona
+* Opção para exibir detalhes dos links, como URL, texto do link e status HTTP
 
-## 3. Objetivos de aprendizagem
-
-Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projeto. Pense nisso para decidir sua estratégia de trabalho.
-
-### JavaScript
-
-- [ ] **Diferenciar entre tipos de dados primitivos e não primitivos**
-
-- [ ] **Arrays (arranjos)**
-
-  <details><summary>Links</summary><p>
-
-  * [Arranjos](https://curriculum.laboratoria.la/pt/topics/javascript/04-arrays)
-  * [Array - MDN](https://developer.mozilla.org//pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/)
-  * [Array.prototype.sort() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-  * [Array.prototype.forEach() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-  * [Array.prototype.map() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-  * [Array.prototype.filter() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-  * [Array.prototype.reduce() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-</p></details>
-
-- [ ] **Objetos (key, value)**
-
-  <details><summary>Links</summary><p>
-
-  * [Objetos em JavaScript](https://curriculum.laboratoria.la/pt/topics/javascript/05-objects/01-objects)
-</p></details>
-
-- [ ] **Uso de condicionais (if-else, switch, operador ternário, lógica booleana)**
-
-  <details><summary>Links</summary><p>
-
-  * [Estruturas condicionais e repetitivas](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/01-conditionals-and-loops)
-  * [Tomando decisões no seu código — condicionais - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals)
-</p></details>
-
-- [ ] **Funções (params, args, return)**
-
-  <details><summary>Links</summary><p>
-
-  * [Funções (controle de fluxo)](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/03-functions)
-  * [Funções clássicas](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/01-classic)
-  * [Arrow Functions](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/02-arrow)
-  * [Funções — blocos reutilizáveis de código - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Functions)
-</p></details>
-
-- [ ] **Recursão**
-
-  <details><summary>Links</summary><p>
-
-  * [Píldora de recursão - YouTube Laboratoria Developers (espanhol)](https://www.youtube.com/watch?v=lPPgY3HLlhQ)
-  * [Recursão o Recursividade - Laboratoria Developers em Medium (espanhol)](https://medium.com/laboratoria-developers/recursi%C3%B3n-o-recursividad-ec8f1a359727)
-</p></details>
-
-- [ ] **Módulos de CommonJS**
-
-  <details><summary>Links</summary><p>
-
-  * [Modules: CommonJS modules - Node.js Docs](https://nodejs.org/docs/latest/api/modules.html)
-</p></details>
-
-- [ ] **Diferença entre expressões (expressions) e declarações (statements)**
-
-- [ ] **Callbacks**
-
-  <details><summary>Links</summary><p>
-
-  * [Função Callback - MDN](https://developer.mozilla.org/pt-BR/docs/Glossario/Callback_function)
-</p></details>
-
-- [ ] **Promessas**
-
-  <details><summary>Links</summary><p>
-
-  * [Promise - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-  * [How to Write a JavaScript Promise - freecodecamp (em inglês)](https://www.freecodecamp.org/news/how-to-write-a-javascript-promise-4ed8d44292b8/)
-</p></details>
-
-- [ ] **Testes unitários (unit tests)**
-
-  <details><summary>Links</summary><p>
-
-  * [Introdução ao Jest - Documentação oficial](https://jestjs.io/docs/pt-BR/getting-started)
-</p></details>
-
-- [ ] **Testes assíncronos**
-
-  <details><summary>Links</summary><p>
-
-  * [Testando Código Assíncrono - Documentação oficial](https://jestjs.io/docs/pt-BR/asynchronous)
-</p></details>
-
-- [ ] **Uso de mocks e espiões**
-
-  <details><summary>Links</summary><p>
-
-  * [Simulações Manuais - Documentação oficial](https://jestjs.io/docs/pt-BR/manual-mocks)
-</p></details>
-
-- [ ] **Teste de compatibilidade em vários ambientes de execução**
-
-- [ ] **Uso de linter (ESLINT)**
-
-- [ ] **Uso de identificadores descritivos (Nomenclatura e Semântica)**
-
-### Node.js
-
-- [ ] **Instalar e usar módulos com npm**
-
-  <details><summary>Links</summary><p>
-
-  * [Sitio oficial de npm (em inglês)](https://www.npmjs.com/)
-</p></details>
-
-- [ ] **Configuração do package.json**
-
-  <details><summary>Links</summary><p>
-
-  * [package.json - Documentação oficial (em inglês)](https://docs.npmjs.com/files/package.json)
-</p></details>
-
-- [ ] **Configuração do npm-scripts**
-
-  <details><summary>Links</summary><p>
-
-  * [scripts - Documentação oficial (em inglês)](https://docs.npmjs.com/misc/scripts)
-</p></details>
-
-- [ ] **process (env, argv, stdin-stdout-stderr, exit-code)**
-
-  <details><summary>Links</summary><p>
-
-  * [Process - Documentação oficial (em inglês)](https://nodejs.org/api/process.html)
-</p></details>
-
-- [ ] **File system (fs, path)**
-
-  <details><summary>Links</summary><p>
-
-  * [File system - Documentação oficial (em inglês)](https://nodejs.org/api/fs.html)
-  * [Path - Documentação oficial (em inglês)](https://nodejs.org/api/path.html)
-</p></details>
-
-### Controle de Versões (Git e GitHub)
-
-- [ ] **Git: Instalação e configuração**
-
-- [ ] **Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)**
-
-- [ ] **Git: Integração de mudanças entre ramos (branch, checkout, fetch, merge, reset, rebase, tag)**
-
-- [ ] **GitHub: Criação de contas e repositórios, configuração de chave SSH**
-
-- [ ] **GitHub: Colaboração pelo Github (branches | forks | pull requests | code review | tags)**
-
-- [ ] **GitHub: Organização pelo Github (projects | issues | labels | milestones | releases)**
-
-### HTTP
-
-- [ ] **Consulta ou solicitação (request) e resposta (response).**
-
-  <details><summary>Links</summary><p>
-
-  * [Visão geral do protocolo HTTP - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview)
-  * [Mensagens HTTP - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Messages)
-</p></details>
-
-- [ ] **Códigos de status de HTTP**
-
-  <details><summary>Links</summary><p>
-
-  * [Códigos de status de respostas HTTP - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status)
-  * [The Complete Guide to Status Codes for Meaningful ReST APIs - dev.to](https://dev.to/khaosdoctor/the-complete-guide-to-status-codes-for-meaningful-rest-apis-1-5c5)
-</p></details>
 
 ## 4. Considerações gerais
 
-* Este projeto deve ser feito individualmente.
+* Este projeto foi realizado individualmente.
 
-* O intervalo de tempo estimado para concluir o projeto é de 4 a 5 Sprints.
+* O projeto foi realizdo em 4 semanas.
 
-* A biblioteca e script executável (ferramenta de linha de comando - CLI) devem
-  ser implementados em JavaScript para serem executadas com Node.JS.
-  **É permitido usar bibliotecas externas**.
+* A biblioteca e script executável (ferramenta de linha de comando - CLI) foram
+  implementados em JavaScript para serem executadas com Node.JS.
+  **Foi utilizada a biblioteca externa node-fetch**.
 
-* O seu módulo deve ser instalável via `npm install <github-user>/md-links`. O
-  módulo deve incluir um _executável_ que pode ser chamado tanto por linha de
-  comando quanto importado com `require` para ser usado em seu código.
+* Os testes unitários tiveram cobertura acima de 70% dos _statements_, _functions_,
+  _lines_ e _branches_. 
 
-* Os testes unitários devem cobrir no mínimo 70% dos _statements_, _functions_,
-  _lines_ e _branches_. Recomendamos que explore o [Jest](https://jestjs.io/)
-  para as suas provas unitárias.
+* A ferramente foi desenvolvida utilizando o modelo de módulos do CommonJs, devido ao 
+ambiente Node.js e para fins de conhecimento.
 
-* Neste projeto não é permitido utilizar `async/await`.
+## 5. Instruçoes para utilização
 
-* Para este projeto, sugerimos que você **não use** a versão síncrona
-da função de leitura de arquivo, `readFileSync`, e tente resolver esse
-desafio de forma assíncrona.
+* Para instalar o módulo, utilize o comando `npm install md-links-lab-009`
+* Depois disso, utilize o comando `md-links ./caminhoDaPasta/nomeDoArquivo.md`que deseja consultar
 
-* Para este projeto é opcional o uso de ES modules `(import/export)`. Caso
-  você decida utilizá-lo deverá criar um script de `build` no `package.json`
-  para que seja transformado em `requires` e `module.exports` com ajuda do Babel.
 
-* Para diminuir a complexidade de seu algoritmo recursivo, recomendamos usar
-a versão síncrona da função de leitura do diretórios, `readdirSync`.
-
-## 5. Critérios de aceitação mínimos do projeto
-
-Para começar este projeto você deverá fazer um _fork_ e _clonar_ este
-repositório.
-
-Antes de começar o código, é necessário criar um plano de ação. Ele deve estar
-detalhado no `README.md` do seu repositório e em uma série de _issues_ e
-_milestones_ para priorizar e organizar o trabalho, e para fazer um
-acompanhamento do seu progresso.
-
-Dentro de cada _milestone_ serão criados e atribuidos as _issues_
-que considerar necessários.
 
 ### Arquivos do projeto
 

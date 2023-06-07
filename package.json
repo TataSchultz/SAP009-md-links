@@ -1,5 +1,5 @@
 {
-  "name": "md-links-tataschultz",
+  "name": "md-links-lab-009",
   "version": "0.1.0",
   "engines": {
     "node": ">=16.x"
@@ -41,8 +41,8 @@
     "jest": "^29.5.0"
   },
   "dependencies": {
-    "chalk": "^5.2.0",
-    "node-fetch": "^3.3.1",
-    "common-js": "^0.3.8"
+    "chalk": "^4.1.2",
+    "common-js": "^0.3.8",
+    "node-fetch": "^3.3.1"
   }
 }
