@@ -5,8 +5,7 @@ com este formato em qualquer repositório (começando pelo tradicional
 `README.md`).
 
 [Node.js](https://nodejs.org/pt-br/) é um ambiente de execução para JavaScript
-construído com o [motor de JavaScript V8 do
-Chrome](https://developers.google.com/v8/). Ele vai nos permitir executar o
+construído com o [motor de JavaScript V8 do Chrome](https://developers.google.com/v8/). Ele vai nos permitir executar o
 JavaScript no nosso sistema operacional, seja no seu computador ou em um
 servidor, o que nos abre portas para poder interagir com sistemas, arquivos,
 redes e etc.
@@ -21,4 +20,4 @@ redes e etc.
 
 [Testando](https://nodis.org/api/process.html)
 [Teste de retorno 400](https://httpstat.us/400).
-[Teste de retorno 404](https://httpstat.us/404).
+[Testando retorno](https://github.com/tatateste).
