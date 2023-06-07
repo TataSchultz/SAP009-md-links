@@ -1,6 +1,5 @@
 const fs = require('fs');
 const chalk = require('chalk');
-
 function validarLink(link) {
   return fetch(link.url)
     .then((res) => {
