@@ -45,7 +45,7 @@ A ferramenta foi desenvolvida usando Node.js, um ambiente de execução para Jav
 
 * Este projeto foi realizado individualmente.
 
-* O projeto foi realizdo em 4 semanas.
+* O projeto foi realizado em 3 semanas.
 
 * A biblioteca e script executável (ferramenta de linha de comando - CLI) foram
   implementados em JavaScript para serem executadas com Node.JS.
@@ -59,10 +59,11 @@ ambiente Node.js e para fins de conhecimento.
 
 ## 5. Instruçoes para utilização
 
-* Para instalar o módulo, utilize o comando `npm install md-links-lab-009`
+* Essa biblioteca foi publicada no npm e para ter acesso, utilize o comando `npm install md-links-lab-009`
 * Depois disso, utilize o comando `md-links ./caminhoDaPasta/nomeDoArquivo.md`que deseja consultar
 
-
+Com isso as informações dos links e suas respectivas pastas serão apresentadas no terminal da seguinte maneira:
+<img src='./pasta/md-links.png'>
 
 ### Arquivos do projeto
 
